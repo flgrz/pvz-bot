@@ -12,11 +12,9 @@ import asyncio
 # ⚠️ ВАШИ НАСТРОЙКИ (ВСТАВЬТЕ СВОИ ДАННЫЕ)
 # ============================================
 
-# ТОКЕН БОТА - получили у @BotFather
-BOT_TOKEN = "8427915511:AAGbVbZGSuFPY7ZnlHpPf1nBbZ8g4zwc0lU"
-
-# CHAT ID - узнали через getUpdates
-CHAT_ID = 8219291620  # ВСТАВЬТЕ СВОЙ ID (ТОЛЬКО ЦИФРЫ)
+import os
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+CHAT_ID = int(os.getenv('CHAT_ID'))
 
 # ============================================
 # 🔗 ССЫЛКИ ДЛЯ ПОИСКА (уже с вашими фильтрами)
